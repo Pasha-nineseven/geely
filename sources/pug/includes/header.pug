@@ -1,0 +1,234 @@
+header.nwmarkup.header
+  .nwmarkup.header__container
+    .nwmarkup.header__line
+      span.nwmarkup.burger
+        span
+      .nwmarkup.logo
+        img(src="http://global.geely.com/wp-content/themes/geely-global/img/logo.png", alt="")
+      nav.nwmarkup.nav#navigation
+        ul
+          li
+           a.nwmarkup.nav__link(href="#")#cars Cars
+           span.nwmarkup.drop-down-carret
+          li
+           a.nwmarkup.nav__link(href="#")#tech Technology
+           span.nwmarkup.drop-down-carret
+          li
+           a.nwmarkup.nav__link(href="#") Design
+           span.nwmarkup.drop-down-carret
+          li
+           a.nwmarkup.nav__link(href="#") About
+           span.nwmarkup.drop-down-carret
+          li.nwmarkup.nav__spliter
+          li
+           a(href="#") News
+          li
+           a(href="#") Social
+          li
+           a(href="#") Find Dealers
+      .nwmarkup.search
+        img(src="img/search.svg", alt="").nwmarkup.search__item#search
+  //- Поиск
+  .nwmarkup.search-down
+    .nwmarkup.search-down__bg
+    .nwmarkup.search-down__block
+      span.nwmarkup.search-down__cross
+      form.nwmarkup.search-down__form
+        input(type="text" placeholder="Keyword").nwmarkup.search-down__form__input
+        button.nwmarkup.search-down__form__btn
+          img(src="img/search.svg", alt="")
+  //- Мобильное меню
+  .nwmarkup.mobile-nav
+    .nwmarkup.mobile-nav__wrapp
+      .nwmarkup.mobile-nav__item.nwmarkup.mobile-nav__prev
+        ul
+          li
+            a.mobile-nav__link(href="#" data-link="cars") Cars
+          li
+            a.mobile-nav__link(href="#" data-link="tech")  Technology
+          li
+            a.mobile-nav__link(href="#") Design
+          li
+            a.mobile-nav__link(href="#") About
+          li
+            a(href="#") News
+          li
+            a(href="#") Social
+          li
+            a(href="#") Find Dealers
+      .nwmarkup.mobile-nav__item.nwmarkup.mobile-nav__next(data-link="tech")
+        .nwmarkup.mobile-nav__next__content
+          .nwmarkup.drop-down.drop-down_mobile
+            .nwmarkup.drop-down__wrap
+              .nwmarkup.drop-down__container
+                .nwmarkup.drop-down__sidebar
+                  h4.nwmarkup.drop-down__sidebar__title Geely Cars
+                  ul.nwmarkup.drop-down__sidebar__list
+                    li.nwmarkup.drop-down__sidebar__item.active
+                      a(href="javascript:void(0)" data-box="all").nwmarkup.drop-down__sidebar__link All
+                    li.nwmarkup.drop-down__sidebar__item
+                      a(href="javascript:void(0)" data-box="sedan").nwmarkup.drop-down__sidebar__link Sedan
+                    li.nwmarkup.drop-down__sidebar__item
+                      a(href="javascript:void(0)" data-box="crossovers").nwmarkup.drop-down__sidebar__link SUV / Crossovers
+                .nwmarkup.drop-down__content
+                  .nwmarkup.drop-down__row
+                    .nwmarkup.drop-down__row__box(data-box="sedan")
+                      h4.nwmarkup.drop-down__row__title Sedan
+                      .row
+                        .col-6.col-md-3
+                          a(href="#").nwmarkup.drop-down__row__item
+                            img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                            span Emgrand GT
+                        .col-6.col-md-3
+                          a(href="#").nwmarkup.drop-down__row__item
+                            img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                            span Emgrand GT
+                        .col-6.col-md-3
+                          a(href="#").nwmarkup.drop-down__row__item
+                            img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                            span Emgrand GT
+                        .col-6.col-md-3
+                          a(href="#").nwmarkup.drop-down__row__item
+                            img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                            span Emgrand GT
+                    .nwmarkup.drop-down__row__box(data-box="crossovers")
+                      h4.nwmarkup.drop-down__row__title SUV / Crossovers
+                      .row
+                        .col-6.col-md-3
+                          a(href="#").nwmarkup.drop-down__row__item
+                            img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                            span Emgrand GT
+                        .col-6.col-md-3
+                          a(href="#").nwmarkup.drop-down__row__item
+                            img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                            span Emgrand GT
+                        .col-6.col-md-3
+                          a(href="#").nwmarkup.drop-down__row__item
+                            img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                            span Emgrand GT
+                        .col-6.col-md-3
+                          a(href="#").nwmarkup.drop-down__row__item
+                            img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                            span Emgrand GT
+      .nwmarkup.mobile-nav__item.nwmarkup.mobile-nav__next(data-link="cars")
+        .nwmarkup.mobile-nav__next__content
+          .nwmarkup.drop-down.drop-down_mobile.drop-down_tech
+            .nwmarkup.drop-down__wrap
+              .nwmarkup.drop-down__container
+                .nwmarkup.drop-down__sidebar
+                  h4.nwmarkup.drop-down__sidebar__title Technology
+                  p.nwmarkup.drop-down__sidebar__text Learn about Geely Auto 
+                    br
+                    |Technologies and its Safety Mission.
+
+                .nwmarkup.drop-down__content
+                  .nwmarkup.drop-down__row
+                    .nwmarkup.drop-down__row__box
+                      .row
+                        .col-12.col-md-4
+                          a(href="#").nwmarkup.drop-down__row__item.drop-down__row__tech
+                            img(src="http://global.geely.com/wp-content/uploads/2017/10/iNtec-thumbnail-1.jpg", alt="")
+                            h5 iNTEC
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique dolores expedita?
+                        .col-12.col-md-4
+                          a(href="#").nwmarkup.drop-down__row__item.drop-down__row__tech
+                            img(src="http://global.geely.com/wp-content/uploads/2017/10/iNtec-thumbnail-1.jpg", alt="")
+                            h5 iNTEC
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique dolores expedita?
+                        .col-12.col-md-4
+                          a(href="#").nwmarkup.drop-down__row__item.drop-down__row__tech
+                            img(src="http://global.geely.com/wp-content/uploads/2017/10/iNtec-thumbnail-1.jpg", alt="")
+                            h5 iNTEC
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique dolores expedita?
+                
+  //- Расхлоп в меню
+  .nwmarkup.drop-down#dropDownCars
+    .nwmarkup.drop-down__overlay
+    .nwmarkup.drop-down__wrap
+      .nwmarkup.drop-down__container
+        .nwmarkup.drop-down__sidebar
+          h4.nwmarkup.drop-down__sidebar__title Geely Cars
+          ul.nwmarkup.drop-down__sidebar__list
+            li.nwmarkup.drop-down__sidebar__item.active
+              a(href="javascript:void(0)" data-box="all").nwmarkup.drop-down__sidebar__link All
+            li.nwmarkup.drop-down__sidebar__item
+              a(href="javascript:void(0)" data-box="sedan").nwmarkup.drop-down__sidebar__link Sedan
+            li.nwmarkup.drop-down__sidebar__item
+              a(href="javascript:void(0)" data-box="crossovers").nwmarkup.drop-down__sidebar__link SUV / Crossovers
+        .nwmarkup.drop-down__content
+          span.nwmarkup.drop-down__cross
+          .nwmarkup.drop-down__row
+            .nwmarkup.drop-down__row__box(data-box="sedan")
+              h4.nwmarkup.drop-down__row__title Sedan
+              .row
+                .col-6.col-md-3
+                  a(href="#").nwmarkup.drop-down__row__item
+                    img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                    span Emgrand GT
+                .col-6.col-md-3
+                  a(href="#").nwmarkup.drop-down__row__item
+                    img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                    span Emgrand GT
+                .col-6.col-md-3
+                  a(href="#").nwmarkup.drop-down__row__item
+                    img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                    span Emgrand GT
+                .col-6.col-md-3
+                  a(href="#").nwmarkup.drop-down__row__item
+                    img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                    span Emgrand GT
+            .nwmarkup.drop-down__row__box(data-box="crossovers")
+              h4.nwmarkup.drop-down__row__title SUV / Crossovers
+              .row
+                .col-6.col-md-3
+                  a(href="#").nwmarkup.drop-down__row__item
+                    img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                    span Emgrand GT
+                .col-6.col-md-3
+                  a(href="#").nwmarkup.drop-down__row__item
+                    img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                    span Emgrand GT
+                .col-6.col-md-3
+                  a(href="#").nwmarkup.drop-down__row__item
+                    img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                    span Emgrand GT
+                .col-6.col-md-3
+                  a(href="#").nwmarkup.drop-down__row__item
+                    img(src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png", alt="")
+                    span Emgrand GT
+  //- Расхлоп в меню 2
+  .nwmarkup.drop-down.drop-down_tech#dropDownTech
+    .nwmarkup.drop-down__overlay
+    .nwmarkup.drop-down__wrap
+      .nwmarkup.drop-down__container
+        .nwmarkup.drop-down__sidebar
+          h4.nwmarkup.drop-down__sidebar__title Technology
+          p.nwmarkup.drop-down__sidebar__text Learn about Geely Auto 
+            br
+            |Technologies and its Safety Mission.
+
+        .nwmarkup.drop-down__content
+          span.nwmarkup.drop-down__cross
+          .nwmarkup.drop-down__row
+            .nwmarkup.drop-down__row__box
+              .row
+                .col-12.col-md-4
+                  a(href="#").nwmarkup.drop-down__row__item.drop-down__row__tech
+                    img(src="http://global.geely.com/wp-content/uploads/2017/10/iNtec-thumbnail-1.jpg", alt="")
+                    h5 iNTEC
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique dolores expedita?
+                .col-12.col-md-4
+                  a(href="#").nwmarkup.drop-down__row__item.drop-down__row__tech
+                    img(src="http://global.geely.com/wp-content/uploads/2017/10/iNtec-thumbnail-1.jpg", alt="")
+                    h5 iNTEC
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique dolores expedita?
+                .col-12.col-md-4
+                  a(href="#").nwmarkup.drop-down__row__item.drop-down__row__tech
+                    img(src="http://global.geely.com/wp-content/uploads/2017/10/iNtec-thumbnail-1.jpg", alt="")
+                    h5 iNTEC
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique dolores expedita?
+  .nwmarkup.breadcrumbs
+    .nwmarkup.breadcrumbs__container
+      span.nwmarkup.breadcrumbs__link.nwmarkup.breadcrumbs__link-inactive Overview
+      span.nwmarkup.breadcrumbs__sep
+      a(href="javascript:void(0)").nwmarkup.breadcrumbs__link Geely Global

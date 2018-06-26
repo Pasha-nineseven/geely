@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"><style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+<!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="nwmarkup">
+    <header class="nwmarkup header">
+      <div class="nwmarkup header__container">
+        <div class="nwmarkup header__line"><span class="nwmarkup burger"><span></span></span>
+          <div class="nwmarkup logo"><img src="http://global.geely.com/wp-content/themes/geely-global/img/logo.png" alt=""></div>
+          <nav class="nwmarkup nav" id="navigation">
+            <ul>
+              <li><a class="nwmarkup nav__link" href="#" id="cars">Cars</a><span class="nwmarkup drop-down-carret"></span></li>
+              <li><a class="nwmarkup nav__link" href="#" id="tech">Technology</a><span class="nwmarkup drop-down-carret"></span></li>
+              <li><a class="nwmarkup nav__link" href="#">Design</a><span class="nwmarkup drop-down-carret"></span></li>
+              <li><a class="nwmarkup nav__link" href="#">About</a><span class="nwmarkup drop-down-carret"></span></li>
+              <li class="nwmarkup nav__spliter"></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Social</a></li>
+              <li><a href="#">Find Dealers</a></li>
+            </ul>
+          </nav>
+          <div class="nwmarkup search"><img class="nwmarkup search__item" src="img/search.svg" alt="" id="search"></div>
+        </div>
+      </div>
+      <div class="nwmarkup search-down">
+        <div class="nwmarkup search-down__bg"></div>
+        <div class="nwmarkup search-down__block"><span class="nwmarkup search-down__cross"></span>
+          <form class="nwmarkup search-down__form">
+            <input class="nwmarkup search-down__form__input" type="text" placeholder="Keyword">
+            <button class="nwmarkup search-down__form__btn"><img src="img/search.svg" alt=""></button>
+          </form>
+        </div>
+      </div>
+      <div class="nwmarkup mobile-nav">
+        <div class="nwmarkup mobile-nav__wrapp">
+          <div class="nwmarkup mobile-nav__item nwmarkup mobile-nav__prev">
+            <ul>
+              <li><a class="mobile-nav__link" href="#" data-link="cars">Cars</a></li>
+              <li><a class="mobile-nav__link" href="#" data-link="tech"> Technology</a></li>
+              <li><a class="mobile-nav__link" href="#">Design</a></li>
+              <li><a class="mobile-nav__link" href="#">About</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Social</a></li>
+              <li><a href="#">Find Dealers</a></li>
+            </ul>
+          </div>
+          <div class="nwmarkup mobile-nav__item nwmarkup mobile-nav__next" data-link="tech">
+            <div class="nwmarkup mobile-nav__next__content">
+              <div class="nwmarkup drop-down drop-down_mobile">
+                <div class="nwmarkup drop-down__wrap">
+                  <div class="nwmarkup drop-down__container">
+                    <div class="nwmarkup drop-down__sidebar">
+                      <h4 class="nwmarkup drop-down__sidebar__title">Geely Cars</h4>
+                      <ul class="nwmarkup drop-down__sidebar__list">
+                        <li class="nwmarkup drop-down__sidebar__item active"><a class="nwmarkup drop-down__sidebar__link" href="javascript:void(0)" data-box="all">All</a></li>
+                        <li class="nwmarkup drop-down__sidebar__item"><a class="nwmarkup drop-down__sidebar__link" href="javascript:void(0)" data-box="sedan">Sedan</a></li>
+                        <li class="nwmarkup drop-down__sidebar__item"><a class="nwmarkup drop-down__sidebar__link" href="javascript:void(0)" data-box="crossovers">SUV / Crossovers</a></li>
+                      </ul>
+                    </div>
+                    <div class="nwmarkup drop-down__content">
+                      <div class="nwmarkup drop-down__row">
+                        <div class="nwmarkup drop-down__row__box" data-box="sedan">
+                          <h4 class="nwmarkup drop-down__row__title">Sedan</h4>
+                          <div class="row">
+                            <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                            <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                            <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                            <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                          </div>
+                        </div>
+                        <div class="nwmarkup drop-down__row__box" data-box="crossovers">
+                          <h4 class="nwmarkup drop-down__row__title">SUV / Crossovers</h4>
+                          <div class="row">
+                            <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                            <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                            <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                            <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nwmarkup mobile-nav__item nwmarkup mobile-nav__next" data-link="cars">
+            <div class="nwmarkup mobile-nav__next__content">
+              <div class="nwmarkup drop-down drop-down_mobile drop-down_tech">
+                <div class="nwmarkup drop-down__wrap">
+                  <div class="nwmarkup drop-down__container">
+                    <div class="nwmarkup drop-down__sidebar">
+                      <h4 class="nwmarkup drop-down__sidebar__title">Technology</h4>
+                      <p class="nwmarkup drop-down__sidebar__text">Learn about Geely Auto <br>Technologies and its Safety Mission.</p>
+                    </div>
+                    <div class="nwmarkup drop-down__content">
+                      <div class="nwmarkup drop-down__row">
+                        <div class="nwmarkup drop-down__row__box">
+                          <div class="row">
+                            <div class="col-12 col-md-4"><a class="nwmarkup drop-down__row__item drop-down__row__tech" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/iNtec-thumbnail-1.jpg" alt="">
+                                <h5>iNTEC</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique dolores expedita?</p></a></div>
+                            <div class="col-12 col-md-4"><a class="nwmarkup drop-down__row__item drop-down__row__tech" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/iNtec-thumbnail-1.jpg" alt="">
+                                <h5>iNTEC</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique dolores expedita?</p></a></div>
+                            <div class="col-12 col-md-4"><a class="nwmarkup drop-down__row__item drop-down__row__tech" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/iNtec-thumbnail-1.jpg" alt="">
+                                <h5>iNTEC</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique dolores expedita?</p></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nwmarkup drop-down" id="dropDownCars">
+        <div class="nwmarkup drop-down__overlay"></div>
+        <div class="nwmarkup drop-down__wrap">
+          <div class="nwmarkup drop-down__container">
+            <div class="nwmarkup drop-down__sidebar">
+              <h4 class="nwmarkup drop-down__sidebar__title">Geely Cars</h4>
+              <ul class="nwmarkup drop-down__sidebar__list">
+                <li class="nwmarkup drop-down__sidebar__item active"><a class="nwmarkup drop-down__sidebar__link" href="javascript:void(0)" data-box="all">All</a></li>
+                <li class="nwmarkup drop-down__sidebar__item"><a class="nwmarkup drop-down__sidebar__link" href="javascript:void(0)" data-box="sedan">Sedan</a></li>
+                <li class="nwmarkup drop-down__sidebar__item"><a class="nwmarkup drop-down__sidebar__link" href="javascript:void(0)" data-box="crossovers">SUV / Crossovers</a></li>
+              </ul>
+            </div>
+            <div class="nwmarkup drop-down__content"><span class="nwmarkup drop-down__cross"></span>
+              <div class="nwmarkup drop-down__row">
+                <div class="nwmarkup drop-down__row__box" data-box="sedan">
+                  <h4 class="nwmarkup drop-down__row__title">Sedan</h4>
+                  <div class="row">
+                    <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                    <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                    <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                    <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                  </div>
+                </div>
+                <div class="nwmarkup drop-down__row__box" data-box="crossovers">
+                  <h4 class="nwmarkup drop-down__row__title">SUV / Crossovers</h4>
+                  <div class="row">
+                    <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                    <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                    <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                    <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nwmarkup drop-down drop-down_tech" id="dropDownTech">
+        <div class="nwmarkup drop-down__overlay"></div>
+        <div class="nwmarkup drop-down__wrap">
+          <div class="nwmarkup drop-down__container">
+            <div class="nwmarkup drop-down__sidebar">
+              <h4 class="nwmarkup drop-down__sidebar__title">Technology</h4>
+              <p class="nwmarkup drop-down__sidebar__text">Learn about Geely Auto <br>Technologies and its Safety Mission.</p>
+            </div>
+            <div class="nwmarkup drop-down__content"><span class="nwmarkup drop-down__cross"></span>
+              <div class="nwmarkup drop-down__row">
+                <div class="nwmarkup drop-down__row__box">
+                  <div class="row">
+                    <div class="col-12 col-md-4"><a class="nwmarkup drop-down__row__item drop-down__row__tech" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/iNtec-thumbnail-1.jpg" alt="">
+                        <h5>iNTEC</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique dolores expedita?</p></a></div>
+                    <div class="col-12 col-md-4"><a class="nwmarkup drop-down__row__item drop-down__row__tech" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/iNtec-thumbnail-1.jpg" alt="">
+                        <h5>iNTEC</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique dolores expedita?</p></a></div>
+                    <div class="col-12 col-md-4"><a class="nwmarkup drop-down__row__item drop-down__row__tech" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/iNtec-thumbnail-1.jpg" alt="">
+                        <h5>iNTEC</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique dolores expedita?</p></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nwmarkup breadcrumbs">
+        <div class="nwmarkup breadcrumbs__container"><span class="nwmarkup breadcrumbs__link nwmarkup breadcrumbs__link-inactive">Overview</span><span class="nwmarkup breadcrumbs__sep"></span><a class="nwmarkup breadcrumbs__link" href="javascript:void(0)">Geely Global</a></div>
+      </div>
+    </header>
+    <div class="new-markup">
+      <section class="nwmarkup preview-s" style="background-image: url('http://global.geely.com/wp-content/uploads/2017/10/hero.jpg')">
+        <div class="nwmarkup preview-s__container">
+          <div class="nwmarkup preview-s__content blacked">
+            <h1 class="nwmarkup preview-s__title">Overview</h1>
+            <p class="nwmarkup preview-s__text">Geely Auto Group is a leading automobile manufacturer based in Hangzhou, China and was founded in 1997 as a subsidiary of Zhejiang Geely Holding Group. Geely Auto Group sells vehicles under the Geely Auto brand and holds a 50% stake in the LYNK & CO brand.</p>
+          </div>
+        </div>
+      </section>
+      <section class="nwmarkup text-s">
+        <div class="nwmarkup text-s__container">
+          <div class="row">
+            <div class="col-md-8">
+              <h2>Geely at a Glance</h2>
+              <p>Geely Auto Group is a leading automobile manufacturer based in Hangzhou, China and was founded in 1997 as a subsidiary of <a href="#">Zhejiang Geely Holding Group. </a>Geely Auto Group sells vehicles under the Geely Auto brand and holds a 50% stake in the LYNK & CO brand.</p>
+              <p>The company employs more than 50,000 people, operates 12 vehicle manufacturing plants, 9 powertrain plants, 6 knockdown kit plants, and manufactures vehicles under the Geely Auto brand. Geely vehicles are sold through a network of over 850 dealerships in China and some 350 sales and service outlets in overseas markets. The company, listed on the Hong Kong stock exchange, saw its sales volume increase to 765,000 units in 2016 with 2017 sales goal set at 1.1 million units. In 2017, Geely Auto Group sold over 1,247,000 units, an increase of 63% from 2016. The success has prompted Geely Auto Group to set its 2018 sales volume target to 1.58 million units .</p>
+            </div>
+          </div>
+          <div class="nwmarkup advantages">
+            <div class="row nwmarkup advantages__item">
+              <div class="col-md-6">
+                <div class="nwmarkup advantages__img"><a href="javascript:void(0)"><img src="http://global.geely.com/wp-content/uploads/2017/10/rnd.jpg" alt=""></a></div>
+              </div>
+              <div class="col-md-6">
+                <div class="nwmarkup advantages__content">
+                  <h3>World-class Research and Development</h3>
+                  <p>The group is committed to world-class research and development in the auto industry. It has established the Geely Automotive Research Institute in Hangzhou, the renowned China Euro Vehicle Technology (CEVT) in Gothenburg, and the world-leading Geely Research Institute in Hangzhou Bay, Ningbo to focus on development of vehicles, engines, transmission and vehicle bound electronics. Other facilities include Design Centres in Barcelona, Gothenburg, California and Shanghai.</p>
+                  <p>Geely’s commitment to innovation and sustainability has led it to invest above the industry average in R&D and initiate green policies. The group’s dedication to innovative research has put it on the forefront of new energy, safety, automotive intelligence, and autonomous drive technologies. In regards to sustainability, Geely sees the switch to new energy vehicles as essential to environmental sustainability and has announced its “Blue Geely Initiative” in which it aims to have 90% of its sales coming from new energy vehicles by 2020.</p><a class="nwmarkup advantages__link" href="javascript:void(0)">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="row nwmarkup advantages__item">
+              <div class="col-md-6 order-1 order-md-2">
+                <div class="nwmarkup advantages__img"><a href="javascript:void(0)"><img src="http://global.geely.com/wp-content/uploads/2017/10/Manufacturing-Facilities-1.jpg" alt=""></a></div>
+              </div>
+              <div class="col-md-6 order-2 order-md-1">
+                <div class="nwmarkup advantages__content">
+                  <h3>Manufacturing Facilities</h3>
+                  <p>Geely Auto Group has vehicle and powertrain manufacturing facilities all over China in places such as Taizhou, Ningbo, Xiangtan, Chengdu, Baoji, and Jinzhong. The company currently produces Emgrand GL (A-class cars), Emgrand GT (B-class cars), X7 Sport (SUV), Emgrand GS (crossover SUV), Emgrand EV (A-Class EV), X7, GC6 and other vehicles along with a full range of powertrains using gasoline and new energy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="nwmarkup explore-s grey-bg">
+        <h3 class="nwmarkup explore-s__title">EXPLORE GEELY AUTO</h3><span class="nwmarkup explore-s__sep"></span>
+        <div class="nwmarkup explore-block"><a class="nwmarkup explore-block__item" href="javascript:void(0)"><span class="nwmarkup explore-block__item__img" style="background-image: url('http://global.geely.com/wp-content/uploads/2017/10/%E5%B8%9D%E8%B1%AAGL%E5%8A%A8%E5%8A%9B%E7%B3%BB%E7%BB%9Fb.png')"></span>
+            <h4 class="nwmarkup explore-block__item__title">iNTEC</h4>
+            <p class="nwmarkup explore-block__item__text">Humanized intelligent driving technology</p></a><a class="nwmarkup explore-block__item" href="javascript:void(0)"><span class="nwmarkup explore-block__item__img" style="background-image: url('http://global.geely.com/wp-content/uploads/2017/10/cta-design-1.jpg')"></span>
+            <h4 class="nwmarkup explore-block__item__title">Design Philosophy</h4>
+            <p class="nwmarkup explore-block__item__text">Geely Auto should look to global trends but our cars should also have a hint of where the company originates from.</p></a><a class="nwmarkup explore-block__item" href="javascript:void(0)"><span class="nwmarkup explore-block__item__img" style="background-image: url('http://global.geely.com/wp-content/uploads/2017/10/cta-history.jpg')"></span>
+            <h4 class="nwmarkup explore-block__item__title">History</h4>
+            <p class="nwmarkup explore-block__item__text">Geely’s era 1.0 to 3.0</p></a></div>
+      </section>
+      <section>
+        <div class="nwmarkup container">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, ad.</p>
+          <p>Lorem, ipsum dolor.<a href="#">Lorem, ipsum.</a></p><small>lorem small</small><br><strong>strong</strong><br><a href="#">link</a>
+          <ul>
+            <li><a href="#">ul list item 1</a></li>
+            <li> <span>ul list item 2</span></li>
+            <li>ul list item 3</li>
+          </ul>
+          <ol>
+            <li> <a href="">ol list item link 1</a></li>
+            <li>ol list item 2</li>
+            <li>ol list item 3</li>
+          </ol>
+          <div class="nwmarkup table-responsive">
+            <table>
+              <tr>
+                <th colspan="8" align="center">GEELY ATLAS</th>
+              </tr>
+              <tr>
+                <td>Модель</td>
+                <td>2.0L/Euro 5/MT</td>
+                <td></td>
+                <td>2.4L/Euro 5/AT(4*2)</td>
+                <td></td>
+                <td>2.4L/Euro 5/AT(4*4)</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Комплектации</td>
+                <td>Standart</td>
+                <td>Comfort</td>
+                <td>Comfort</td>
+                <td>Luxury</td>
+                <td>Comfort</td>
+                <td>Luxury</td>
+                <td>Flagship</td>
+              </tr>
+              <tr>
+                <td>Цена</td>
+                <td>уточняется</td>
+                <td>уточняется</td>
+                <td>уточняется</td>
+                <td>уточняется</td>
+                <td>уточняется</td>
+                <td>уточняется</td>
+                <td>уточняется</td>
+              </tr>
+              <tr>
+                <td>Двигатель 2.0L Бензин Атмосферный</td>
+                <td class="center">+</td>
+                <td class="center">+</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Двигатель 2.4L Бензин Атмосферный</td>
+                <td> </td>
+                <td> </td>
+                <td class="center">+</td>
+                <td class="center">+</td>
+                <td class="center">+</td>
+                <td class="center">+</td>
+                <td class="center">+</td>
+              </tr>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <p class="nwmarkup form-error">There was a problem with your submission. Errors have been highlighted below.</p>
+            </div>
+          </div>
+          <form>
+            <div class="row">
+              <div class="col-md-4">
+                <select>
+                  <option selected="selected">Subject</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <div class="nwmarkup form__row" data-required="This field is required.">
+                  <input type="text" placeholder="First Name">
+                </div>
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Company">
+                <input type="email" placeholder="Email">
+                <select>
+                  <option selected="selected">Country</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <textarea placeholder="Message"></textarea>
+                <label>
+                  <input class="nwmarkup checkbox" type="checkbox"><span class="nwmarkup checkbox-stylish"></span><span class="nwmarkup checkbox-label">Lorem ipsum dolor sit amet consectetur.</span>
+                </label><br>
+                <label>
+                  <input class="nwmarkup radio" type="radio" name="test"><span class="nwmarkup radio-stylish"></span><span class="nwmarkup radio-label">Lorem ipsum 1</span>
+                </label><br>
+                <label>
+                  <input class="nwmarkup radio" type="radio" name="test"><span class="nwmarkup radio-stylish"></span><span class="nwmarkup radio-label">Lorem ipsum 2</span>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <button type="submit">Send</button>
+              </div>
+              <div class="col-md-4">
+                <input type="submit" value="send">
+              </div>
+              <div class="col-md-4"><a class="nwmarkup-btn" href="#">send</a></div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div class="sticky-footer"></div>
+    <footer class="nwmarkup footer">
+      <div class="nwmarkup footer__container">
+        <div class="nwmarkup footer__line">
+          <div class="nwmarkup logo-footer"><img src="http://global.geely.com/wp-content/themes/geely-global/img/logo.png" alt=""></div>
+          <div class="nwmarkup footer-content">
+            <div class="nwmarkup footer-content__upper">
+              <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Geely Holding Group</a></li>
+              </ul>
+              <div class="nwmarkup footer-content__socials"><a class="nwmarkup footer__fb" href="#">
+                  <svg x="0px" y="0px" width="100%" height="100%" viewbox="0 0 60.734 60.733" style="enable-background:new 0 0 60.734 60.733;" xml:space="preserve">
+                    <path d="M57.378,0.001H3.352C1.502,0.001,0,1.5,0,3.353v54.026c0,1.853,1.502,3.354,3.352,3.354h29.086V37.214h-7.914v-9.167h7.914                v-6.76c0-7.843,4.789-12.116,11.787-12.116c3.355,0,6.232,0.251,7.071,0.36v8.198l-4.854,0.002c-3.805,0-4.539,1.809-4.539,4.462                v5.851h9.078l-1.187,9.166h-7.892v23.52h15.475c1.852,0,3.355-1.503,3.355-3.351V3.351C60.731,1.5,59.23,0.001,57.378,0.001z"></path>
+                  </svg></a><a class="nwmarkup footer__in" href="#">
+                  <svg x="0px" y="0px" width="100%" height="100%" viewbox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+                    <path id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707                c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21                v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824                C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463                c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z                M5.477,420.56h92.184v-277.32H5.477V420.56z"></path>
+                  </svg></a><a class="nwmarkup footer__tw" href="#">
+                  <svg x="0px" width="100%" height="100%" y="0px" viewbox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568                C480.224,136.96,497.728,118.496,512,97.248z"></path>
+                  </svg></a><a class="nwmarkup footer__weibo" href="#">
+                  <svg width="100%" height="100%" x="0px" y="0px" viewbox="0 0 99.5 99.5" style="enable-background:new 0 0 99.5 99.5;" xml:space="preserve">
+                    <path d="M73.189,50.091c-1.373-0.417-2.314-0.705-1.596-2.539c1.555-3.985,1.718-7.422,0.031-9.874                c-3.164-4.6-11.818-4.353-21.735-0.123c0-0.005-3.116,1.387-2.32-1.129c1.526-4.994,1.294-9.174-1.078-11.589                c-5.38-5.481-19.691,0.208-31.967,12.696C5.334,46.889,0,56.806,0,65.38c0,16.399,20.66,27.37,40.874,27.37                C67.371,92.75,85,76.08,85,63.639C85,56.12,78.779,51.854,73.189,50.091z M40.929,85.397c-16.13,1.598-30.051-5.729-31.1-16.38                c-1.047-10.646,11.182-20.578,27.31-22.181c16.131-1.606,30.055,5.727,31.1,16.373C69.283,73.86,57.062,83.793,40.929,85.397z                M99.5,36.737C99.492,20.175,86.065,6.75,69.5,6.75c-1.934,0-3.5,1.567-3.5,3.5c0,1.934,1.566,3.5,3.5,3.5                c12.703,0,23,10.298,23,23c0,1.934,1.568,3.5,3.5,3.5c1.934,0,3.5-1.566,3.5-3.5C99.5,36.75,99.5,36.742,99.5,36.737z                M85.593,36.223c-1.599-7.809-7.755-13.964-15.565-15.564c-1.891-0.389-3.742,0.83-4.13,2.723c-0.39,1.893,0.829,3.742,2.72,4.133                c5.078,1.04,9.08,5.039,10.119,10.117c0.391,1.893,2.24,3.111,4.133,2.723C84.762,39.964,85.98,38.115,85.593,36.223z                M32.656,57.264c-6.498,1.306-10.882,6.755-9.794,12.169c1.087,5.415,7.237,8.745,13.735,7.438                c6.496-1.306,10.882-6.753,9.793-12.169C45.304,59.289,39.152,55.958,32.656,57.264z"></path>
+                  </svg></a><a class="nwmarkup footer__yt" href="#">
+                  <svg width="100%" height="100%" x="0px" y="0px" viewbox="0 0 508.492 508.492" style="enable-background:new 0 0 508.492 508.492;" xml:space="preserve">
+                    <path d="M504.15,158.24c-2.829-33.848-23.011-76.532-64.487-78.058c-115.815-7.787-253.02-9.916-370.933,0                c-36.582,4.1-61.658,48.659-64.391,82.507c-5.784,71.097-5.784,111.557,0,182.654c2.765,33.848,27.206,78.662,64.455,83.365                c119.311,7.787,255.849,8.899,370.933,0c36.105-6.261,61.69-49.517,64.455-83.365C509.934,274.214,509.934,229.337,504.15,158.24z                M190.647,344.199V161.926l158.912,91.152L190.647,344.199z"></path>
+                  </svg></a></div>
+            </div>
+            <div class="nwmarkup footer__copyright"><a href="#">Legal Statement</a><span>© Copyright 2018 Geely Auto</span></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/lightbox/js/lightbox.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
