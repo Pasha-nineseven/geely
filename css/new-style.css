@@ -1,0 +1,119 @@
+.nwmarkup.header__container {
+    padding-top: 9px;
+}
+.nwmarkup.search{
+	width: 28px;
+	height: 28px;
+	    min-width: inherit;
+    max-width: inherit;
+    cursor: pointer;
+        margin-top: 27px;
+	background: red;
+}
+.header__wraper{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+}
+/*.header__wraper:after{
+	content: "";
+	display: table;
+	clear: both;
+}*/
+.nwmarkup.logo{
+	width: 87px;
+    height: 50px;
+    max-width: inherit;
+    min-width: inherit;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+        margin-top: 24px;
+
+}
+.nwmarkup.logo img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	max-height: 100%;
+}
+.header__inner{
+
+}
+.top-nav{
+	margin-bottom: 15px;
+}
+.top-nav__list{
+	    list-style: none;
+    margin: 0;
+}
+.top-nav__item{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 37px;
+}
+.top-nav__item:last-child{
+	margin-right: 0;
+}
+.nwmarkup.header__container {
+    max-width: 1290px;
+    padding: 0;
+}
+.top-nav__link{
+	text-decoration: none;
+	font-size: 16px;
+	color: #231815;
+}
+.top-nav__item--sub .top-nav__link{
+	position: relative;
+}
+.top-nav__item--sub .top-nav__link:after{
+	content: "";
+	display:inline-block;
+	width: 5px;
+	height: 8px;
+	position: absolute;
+	top: 50%;
+	margin-top: -4px;
+	right: -10px;
+	background: red;
+}
+.top-cars{
+    border-radius: 6px;
+    background-color: #EFF1F3;
+    font-size: 20px;
+    text-decoration: none;
+    color: #231815;
+    font-family: "NeoSansCyrRegular", sans-serif;
+    padding: 10px 42px;
+    position: relative;
+}
+.top-cars:before{
+	content: "";
+	height: 14px;
+	width: 16px;
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	margin-top: -7px;
+	background: red;
+}
+.top-cars:after{
+	content: "";
+	height: 7px;
+	width: 11px;
+	display: inline-block;
+	top: 50%;
+	margin-top: -4px;
+	right: 15px;
+	position: absolute;
+	background: red;
+}
