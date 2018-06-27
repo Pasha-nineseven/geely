@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>svg/header/logo_mts</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header_index_03" transform="translate(-664.000000, -79.000000)">
+            <g id="header_index_01" transform="translate(-55.000000, -18.000000)">
+                <g id="Контакты" transform="translate(565.000000, 69.000000)">
+                    <g id="phone">
+                        <g id="mts" transform="translate(154.000000, 28.000000)">
+                            <g id="svg/header/logo_mts">
+                                <rect id="Rectangle-2" fill="#B9CEE7" opacity="0.237488678" x="0" y="0" width="17" height="17" rx="2"></rect>
+                                <path d="M8.58333333,14 C11.1146384,14 13.1666667,11.9479718 13.1666667,9.41666667 C13.1666667,6.88536156 11.1146384,3 8.58333333,3 C6.05202823,3 4,6.88536156 4,9.41666667 C4,11.9479718 6.05202823,14 8.58333333,14 Z" id="Oval" fill="#5394C7" opacity="0.5"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

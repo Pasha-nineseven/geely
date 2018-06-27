@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="12px" viewBox="0 0 17 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>svg/header/logo_velcom</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="header_index_03" transform="translate(-855.000000, -82.000000)" fill="#5394C7">
+            <g id="header_index_01" transform="translate(-55.000000, -18.000000)">
+                <g id="Контакты" transform="translate(565.000000, 69.000000)">
+                    <g id="phone">
+                        <g id="velcom" transform="translate(345.000000, 26.000000)">
+                            <path d="M7.10355339,10.25 L14.6035534,10.25 L14.6035534,14.25 L3.60355339,14.25 L3.60355339,13.75 L3.10355339,13.75 L3.10355339,2.75 L7.10355339,2.75 L7.10355339,10.25 Z" id="svg/header/logo_velcom" transform="translate(8.853553, 8.500000) rotate(-45.000000) translate(-8.853553, -8.500000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
