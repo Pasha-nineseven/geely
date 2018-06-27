@@ -16,7 +16,9 @@
     <header class="nwmarkup header">
         <div class="nwmarkup header__container">
             <div class="header__wraper">
-                <div class="nwmarkup logo"></div>
+                <div class="logo-wrapper">
+                    <div class="nwmarkup logo"></div>
+                </div>
                 <div class="header__inner">
                     <nav class="top-nav">
                         <ul class="top-nav__list">
@@ -31,6 +33,20 @@
                             </li>
                             <li class="top-nav__item top-nav__item--sub">
                                 <a href="#" class="top-nav__link">О компании</a>
+                                <div class="top-nav-submenu">
+                                    <div class="top-nav-submenu__item">
+                                        <a href="#" class="top-nav-submenu__link active">Новости</a>
+                                    </div>
+                                    <div class="top-nav-submenu__item">
+                                        <a href="#" class="top-nav-submenu__link">О Geely</a>
+                                    </div>
+                                    <div class="top-nav-submenu__item">
+                                        <a href="#" class="top-nav-submenu__link">О Geely Center Minsk</a>
+                                    </div>
+                                    <div class="top-nav-submenu__item">
+                                        <a href="#" class="top-nav-submenu__link">Вакансии</a>
+                                    </div>
+                                </div>
                             </li>
                             <li class="top-nav__item">
                                 <a href="#" class="top-nav__link">Бонусная программа</a>
@@ -85,11 +101,14 @@
         </div>
         <div class="nwmarkup search-down">
             <div class="nwmarkup search-down__bg"></div>
-            <div class="nwmarkup search-down__block"><span class="nwmarkup search-down__cross"></span>
-                <form class="nwmarkup search-down__form">
-                    <input class="nwmarkup search-down__form__input" type="text" placeholder="Keyword">
-                    <button class="nwmarkup search-down__form__btn"><img src="img/search.svg" alt=""></button>
-                </form>
+            <div class="nwmarkup search-down__block">
+                <div class="search-down__wrapper">
+                    <span class="nwmarkup search-down__cross"></span>
+                    <form class="nwmarkup search-down__form">
+                        <input class="nwmarkup search-down__form__input" type="text" placeholder="Keyword">
+                        <button class="nwmarkup search-down__form__btn"><img src="img/search.svg" alt=""></button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="nwmarkup mobile-nav">
@@ -117,32 +136,108 @@
             <div class="nwmarkup drop-down__wrap">
               <div class="nwmarkup drop-down__container">
                 <div class="nwmarkup drop-down__sidebar">
-                  <h4 class="nwmarkup drop-down__sidebar__title">Geely Cars</h4>
+                  <div class="nwmarkup drop-down__sidebar__title">
+                      Автомобили Geely
+                  </div>
                   <ul class="nwmarkup drop-down__sidebar__list">
-                    <li class="nwmarkup drop-down__sidebar__item active"><a class="nwmarkup drop-down__sidebar__link" href="javascript:void(0)" id="allLink">All</a></li>
-                    <li class="nwmarkup drop-down__sidebar__item"><a class="nwmarkup drop-down__sidebar__link" href="javascript:void(0)" id="sedanLink">Sedan</a></li>
-                    <li class="nwmarkup drop-down__sidebar__item"><a class="nwmarkup drop-down__sidebar__link" href="javascript:void(0)" id="crossoversLink">SUV / Crossovers</a></li>
+                    <li class="nwmarkup drop-down__sidebar__item active">
+                        <a class="nwmarkup drop-down__sidebar__link" href="javascript:void(0)" id="allLink" data-box="all">Все</a>
+                    </li>
+                    <li class="nwmarkup drop-down__sidebar__item">
+                        <a class="nwmarkup drop-down__sidebar__link" href="javascript:void(0)" id="sedanLink" data-box="suv-crossovers">SUV / Crossovers</a></li>
+                    <li class="nwmarkup drop-down__sidebar__item">
+                        <a class="nwmarkup drop-down__sidebar__link" href="javascript:void(0)" id="crossoversLink" data-box="sedan">Седаны</a>
+                    </li>
                   </ul>
                 </div>
-                <div class="nwmarkup drop-down__content"><span class="nwmarkup drop-down__cross"></span>
+                <div class="nwmarkup drop-down__content"><span class="nwmarkup drop-down__cross">Закрыть</span>
                   <div class="nwmarkup drop-down__row">
-                    <div class="nwmarkup drop-down__row__box" id="sedanBox">
-                      <h4 class="nwmarkup drop-down__row__title">Sedan</h4>
-                      <div class="row">
-                        <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
-                        <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
-                        <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
-                        <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
-                      </div>
+                    <div class="nwmarkup drop-down__row__box" id="allBox" data-box="all">
+                        <h4 class="nwmarkup drop-down__row__title">Все</h4>
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <a class="nwmarkup drop-down__row__item" href="#">
+                                    <img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt="">
+                                    <span>Emgrand GT</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a class="nwmarkup drop-down__row__item" href="#">
+                                    <img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt="">
+                                    <span>Emgrand GT</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a class="nwmarkup drop-down__row__item" href="#">
+                                    <img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt="">
+                                    <span>Emgrand GT</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a class="nwmarkup drop-down__row__item" href="#">
+                                    <img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt="">
+                                    <span>Emgrand GT</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="nwmarkup drop-down__row__box" id="crossoversBox">
-                      <h4 class="nwmarkup drop-down__row__title">SUV / Crossovers</h4>
-                      <div class="row">
-                        <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
-                        <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
-                        <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
-                        <div class="col-6 col-md-3"><a class="nwmarkup drop-down__row__item" href="#"><img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt=""><span>Emgrand GT</span></a></div>
-                      </div>
+                    <div class="nwmarkup drop-down__row__box" id="sedanBox" data-box="suv-crossovers">
+                        <h4 class="nwmarkup drop-down__row__title">SUV / Crossovers</h4>
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <a class="nwmarkup drop-down__row__item" href="#">
+                                    <img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt="">
+                                    <span>Emgrand GT</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a class="nwmarkup drop-down__row__item" href="#">
+                                    <img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt="">
+                                    <span>Emgrand GT</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a class="nwmarkup drop-down__row__item" href="#">
+                                    <img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt="">
+                                    <span>Emgrand GT</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a class="nwmarkup drop-down__row__item" href="#">
+                                    <img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt="">
+                                    <span>Emgrand GT</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nwmarkup drop-down__row__box" id="crossoversBox" data-box="sedan">
+                        <h4 class="nwmarkup drop-down__row__title">Sedan</h4>
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <a class="nwmarkup drop-down__row__item" href="#">
+                                    <img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt="">
+                                    <span>Emgrand GT</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a class="nwmarkup drop-down__row__item" href="#">
+                                    <img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt="">
+                                    <span>Emgrand GT</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a class="nwmarkup drop-down__row__item" href="#">
+                                    <img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt="">
+                                    <span>Emgrand GT</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a class="nwmarkup drop-down__row__item" href="#">
+                                    <img src="http://global.geely.com/wp-content/uploads/2017/10/Emgrand-GT.png" alt="">
+                                    <span>Emgrand GT</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -228,5 +323,6 @@
     <script src="libs/slick/slick.min.js"></script>
     <script src="libs/lightbox/js/lightbox.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/common-new.js"></script>
   </body>
 </html>

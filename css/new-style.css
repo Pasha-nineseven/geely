@@ -47,11 +47,9 @@
     font-family: 'NeoSansPro-Regular';
         padding-bottom: 7px;
 }
-/*.header__wraper:after{
-	content: "";
-	display: table;
-	clear: both;
-}*/
+.logo-wrapper{
+	width: 145px;
+}
 .nwmarkup.logo{
 	width: 87px;
     height: 50px;
@@ -84,6 +82,9 @@
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 37px;
+}
+.top-nav__item--sub{
+	position: relative;
 }
 .top-nav__item:last-child{
 	margin-right: 0;
@@ -256,4 +257,102 @@
 }
 .header-address__link:hover{
 	text-decoration: underline;
+}
+
+.top-nav-submenu{
+	background-color: #EFF1F3;
+	padding: 15px 0;
+	position: absolute;
+	left: 0;
+	z-index: 9;
+	width: 200px;
+	    margin-top: 5px;
+	    display: none;
+}
+.top-nav-submenu:before{
+	    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 4px 5px 4px;
+    border-color: transparent transparent #EFF1F3 transparent;
+    display: inline-block;
+    position: absolute;
+    bottom: 100%;
+    left: 15px;
+}
+
+.top-nav-submenu__link{
+	display: block;
+	font-size: 16px;
+	padding: 5px 22px;
+	text-decoration: none;
+	color: #231815;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+.top-nav-submenu__link:hover,
+.top-nav-submenu__link.active{
+	color: #0167B2;
+}
+.nwmarkup.drop-down__container{
+	max-width: 1290px;
+	padding: 70px 0 0 0;
+}
+.nwmarkup.drop-down__cross{
+	right: 4px;
+	min-width: inherit;
+	max-width: inherit;
+	font-size: 16px;
+	height: auto;
+	padding-left: 30px;
+}
+
+.nwmarkup.drop-down__cross:before{
+	left: -60px;
+}
+
+.nwmarkup.drop-down__cross:after {
+    right: 60px;
+}
+.nwmarkup.drop-down__sidebar{
+	width: 220px;
+	min-width: inherit;
+	max-width: inherit;
+}
+.search-down__wrapper{
+	max-width: 1290px;
+	margin: 0 auto;
+	position: relative; 
+}
+.nwmarkup.search-down__cross{
+	right: 0;
+
+}
+
+.nwmarkup.drop-down__sidebar__title{
+	color: #231815;
+	font-family: 'NeoSansPro-Medium';
+	    line-height: 1.3;
+	        margin-bottom: 22px;
+}
+.nwmarkup.drop-down__sidebar__list{
+	font-size: 16px;
+}
+
+.nwmarkup.drop-down__sidebar__link {
+    color: #231815;
+    font-size: 16px;
+    font-family: 'NeoSansPro-Regular';
+    -webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+.nwmarkup.drop-down__sidebar__link:hover{
+	color: #0167B2;
+}
+.nwmarkup.drop-down__sidebar__item {
+    padding: 13px 0 8px;
+    border: 0;
 }
