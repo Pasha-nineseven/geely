@@ -859,6 +859,18 @@ a.contact-phone__item{
 		padding: 0 5px;
 }
 
+.vakancies__item{
+	font-family: 'NeoSansPro-Regular';
+	font-size: 16px;
+}
+
+
+.vakancies__item .vakancies__link{
+	font-size: 24px;
+	font-family: 'NeoSansPro-Medium';
+	text-decoration: none!important;
+}
+
 @media only screen and (max-width: 1320px){
 	.nwmarkup.header__container,
 	.nwmarkup.drop-down__container{
