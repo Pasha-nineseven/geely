@@ -10,4 +10,20 @@ $(document).ready(function() {
             $(".top-nav-submenu").fadeOut(100);
         }
     });
+
+
+    $(".nwmarkup.burger").click(function () {
+	  	if(!$(this).hasClass('back')) {
+	    	$('.mobile-navigation').slideToggle()
+	  	} else {
+	    	$('.nwmarkup.burger').addClass('back')
+	  	}
+	});
+
+
+    //MOBILE SUBMENU
+	$("body").on("click", ".mobile-sub--link", function(e){
+		e.preventDefault();
+        $(this).next('.mobile-submenu').slideToggle();
+    });
 })
