@@ -26,4 +26,14 @@ $(document).ready(function() {
 		e.preventDefault();
         $(this).next('.mobile-submenu').slideToggle();
     });
+
+    //ACCORDEON
+    $("body").on("click", ".vakancies__link", function(e){
+        e.preventDefault();
+        $(this).parents('.vakancies__item').addClass('active');
+    });
+    $("body").on("click", ".vakancies__close", function(e){
+        e.preventDefault();
+        $(this).parents('.vakancies__item').removeClass('active');
+    });
 })

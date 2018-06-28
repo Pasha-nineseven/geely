@@ -862,6 +862,65 @@ a.contact-phone__item{
 .vakancies__item{
 	font-family: 'NeoSansPro-Regular';
 	font-size: 16px;
+	position: relative;
+	padding-bottom: 36px;
+}
+
+.vakancies__close{
+    position: absolute;
+    right: 35px;
+    top: 12px;
+    font-size: 16px!important;
+    height: auto;
+    padding-left: 35px;
+    font-family: 'NeoSansPro-Regular';
+    text-decoration: none!important;
+    color: #231815!important;
+    display: none;
+    z-index: 2;
+}
+.vakancies__close:before{
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    margin: auto;
+    width: 28px;
+    height: 1px;
+    background: #231815;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.vakancies__close:after{
+	    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 28px;
+    height: 1px;
+    background: #231815;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.vakancies__item.active .vakancies__close{
+	display: inline-block;
+}
+
+.vakancies__item.active .vakancies__link{
+	max-width: 100%;
+	border-bottom: 1px solid #fff;
+	background: #EFF1F3;
+	padding-left: 31px;
+}
+.vakancies__item.active .vakancies__link:after{
+	display: none;
 }
 
 
@@ -869,7 +928,32 @@ a.contact-phone__item{
 	font-size: 24px;
 	font-family: 'NeoSansPro-Medium';
 	text-decoration: none!important;
+	border-top: 1px solid #EFF1F3;
+	display: block;
+	padding: 5px 30px 20px 0;
+	position: relative;
+	max-width: 850px;
 }
+.vakancies__item .vakancies__link:after{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/open_icon.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 5px;
+    top: 19px;
+}
+
+.vakancies__txt{
+	max-width: 740px;
+}
+
+.vakancies__info{
+	background: #EFF1F3;
+}
+
 
 @media only screen and (max-width: 1320px){
 	.nwmarkup.header__container,
