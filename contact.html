@@ -93,6 +93,34 @@
                             <div class="header-address__info">
                                 <a href="#" class="header-address__link">Как доехать</a>
                                 Время работы: 8:00 - 20:00
+                                <div class="header-address__map" style="background-image: url(img/test-image.jpg)">
+                                    <div class="header-address-map-wrap">
+                                        <a href="#" class="map__close">Закрыть</a>
+                                        <div class="map-select">
+                                            <div class="map-select__item map-select__item--transport">
+                                                <div class="map-select__link">На общ.транспорте</div>
+                                                <ul class="map-select__item--sub">
+                                                    <li>
+                                                        <a href="#" class="map-select__link map-select__link--1056">Маршрутка 1056</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="map-select__link map-select__link--130">Автобус 130</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="map-select__link map-select__link--1419">Маршрутка 1419</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="map-select__link map-select__link--499">Маршрутка 499</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="map-select__item map-select__item--auto">
+                                                <a href="#" class="map-select__link map-select__link--auto active">На автомобиле</a>
+                                            </div>
+                                        </div>
+                                        <div id="header-address-map"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>                
                     </div>
@@ -479,10 +507,13 @@
     </footer>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/new-style.css">
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0FTwSLUL-C1FOgm1oxIc1r3pCU102WNw"></script>
     <script src="libs/jquery/jquery-3.2.1.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="libs/lightbox/js/lightbox.js"></script>
     <script src="js/common.js"></script>
     <script src="js/common-new.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
