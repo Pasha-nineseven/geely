@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+<!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="body-counter" style="background-image: url(img/bg_img.jpg);">
+    <h2>До запуска нового сайта<br> Джили Центр Минск осталось:</h2>
+    <div id="event-counter">
+        <ul>
+   <!--          <li>
+                Дни
+                <span>
+                    <p class="days">00</p>
+                </span>
+            </li> -->
+            <li>
+                Часы
+                <span>
+                    <p class="hours">00</p>
+                </span>
+            </li>
+            <li>
+                Минуты
+                <span>
+                    <p class="minutes">00</p>
+                </span>
+            </li>
+            <li>
+                Секунды
+                <span>
+                    <p class="seconds">00</p>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/counter.css">
+    <script src="libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script>
+        if ($('#event-counter').length>0) {
+            $('#event-counter').jCounter({
+                date: "22 jul 2018 19:00:00", //format: DD month YYYY HH:MM:SS
+                timezone: "Europe/Bucharest",
+                format: "dd:hh:mm:ss",
+                twoDigits: 'on',
+                serverDateSource: 'js/dateandtime.php',
+                //callback: function() { console.log("Counter 1 finished!") }
+            });
+        };
+    </script>
+  </body>
+</html>
