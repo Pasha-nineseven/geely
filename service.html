@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"><style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+<!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="nwmarkup">
+    <header class="nwmarkup header">
+        <div class="nwmarkup header__container">
+            HEADER
+        </div>
+    </header>
+    <div class="nwmarkup breadcrumbs">
+        <div class="nwmarkup breadcrumbs__container">
+            <span class="nwmarkup breadcrumbs__link nwmarkup breadcrumbs__link-inactive">
+                Сервисы и ТО
+            </span>
+            <span class="nwmarkup breadcrumbs__sep"></span>
+            <a class="nwmarkup breadcrumbs__link" href="/about/">
+                О компании
+            </a>
+            <span class="nwmarkup breadcrumbs__sep"></span>
+            <a class="nwmarkup breadcrumbs__link" href="/">
+                Главная
+            </a>
+            <div style="clear:both"></div>
+        </div>
+    </div>
+    <div class="new-markup">
+      <section class="nwmarkup">
+        <div class="nwmarkup text-s__container text-s">
+            <h1>Сервисы и ТО</h1>
+            <div class="service">
+                <form action="#" method="post">
+                    <div class="service-steps">
+                        <div class="service-steps__item">
+                            <a href="#" class="service-steps__link active" data-step="1">1. Выбор авто</a>
+                            <div class="service-steps-choice">
+                                <div class="service-steps-choice__img">
+                                    <img src="img/emgrand.png" alt="">
+                                </div>
+                                <div class="service-steps-choice__title">
+                                    Atlas
+                                </div>
+                                <a href="#" class="new-choice new-choice--back_1">Выбрать другое авто</a>
+                            </div>
+                        </div>
+                        <div class="service-steps__item">
+                            <a href="#" class="service-steps__link" data-step="2">2. Тип двигателя</a>
+                            <div class="service-steps-choice">
+                                <div class="service-steps-choice__title">
+                                    2.0L Бензин Атмосферный
+                                </div>
+                                <a href="#" class="new-choice new-choice--back_2">Выбрать другой двигатель</a>
+                            </div>
+                        </div>
+                        <div class="service-steps__item">
+                            <a href="#" class="service-steps__link" data-step="3">3. Пробег</a>
+                        </div>
+                    </div>
+                    <div class="service-view">
+                        <div class="service-view__item" data-step="1">
+                            <div class="service-view__title">
+                                <h3><span>1/3</span>Выберите авто</h3>
+                            </div>
+                            <div class="service-view__wrap">
+                                <div class="service-view__select">
+                                    <div class="radio-item">
+                                        <input type="radio" id="auto1" name="select-auto">
+                                        <label for="auto1">
+                                            <div class="select-img">
+                                                <img src="img/atlas.png" alt="">
+                                            </div>
+                                            <div class="select-txt">
+                                                Atlas
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="service-view__select">
+                                    <div class="radio-item">
+                                        <input type="radio" id="auto2" name="select-auto">
+                                        <label for="auto2">
+                                            <div class="select-img">
+                                                <img src="img/emgrand.png" alt="">
+                                            </div>
+                                            <div class="select-txt">
+                                                Emgrand X7
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-view__item" data-step="2">
+                            <div class="service-view__title">
+                                <h3><span>2/3</span>Выберите тип двигателя</h3>
+                            </div>
+                            <div class="service-view__wrap">
+                                <div class="service-view__select service-view__select--engine">
+                                    <div class="radio-item">
+                                        <input type="radio" id="engine1" name="select-engine">
+                                        <label for="engine1">
+                                            <div class="select-txt">
+                                                2.0L Бензин Атмосферный
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="service-view__select service-view__select--engine">
+                                    <div class="radio-item">
+                                        <input type="radio" id="engine2" name="select-engine">
+                                        <label for="engine2">
+                                            <div class="select-txt">
+                                                2.4L Бензин Атмосферный
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-view__item" data-step="3">
+                            <div class="service-view__title">
+                                <h3>
+                                    <a href="#" class="new-choice new-choice--back_3">Назад к выбору двигателя</a>
+                                    <span>3/3</span>Пробег, км и период, мес
+                                </h3>
+                            </div>
+                            <div class="mileage-slider-wrap">
+                                <div class="mileage-slider__item">
+                                    <div class="mileage-slider__count">
+                                        <span>10 000</span> км
+                                    </div>
+                                    <div class="mileage-slider__items mileage-slider__items--mile">
+                                        <div id="mileage-slider"></div>
+                                    </div>
+                                </div>
+                                <div class="mileage-slider__item">
+                                    <div class="mileage-slider__count">
+                                        <span>6</span> км
+                                    </div>
+                                    <div class="mileage-slider__items mileage-slider__items--time">
+                                        <div id="time-slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-view__title">
+                                <h3>
+                                    Входит в стоимость
+                                </h3>
+                            </div>
+                            <div class="service-view-info">
+                                <div class="service-view-info-table">
+                                    <table>
+                                        <tr>
+                                            <th>Запасные части</th>
+                                            <th>Стоимость руб.</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <td>Масляный сервис</td>
+                                            <td>77,25</td>
+                                            <td>
+                                                <div class="check-unactive">
+                                                    <img src="img/chekactive.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Салонный фильтр</td>
+                                            <td>75,6</td>
+                                            <td>
+                                                <div class="check-active">
+                                                    <img src="img/chekactive.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Воздушный фильтр</td>
+                                            <td>39</td>
+                                            <td>
+                                                <div class="check-active">
+                                                    <img src="img/chekactive.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Свечи зажигания</td>
+                                            <td>24</td>
+                                            <td>
+                                                <div class="check-unactive">
+                                                    <img src="img/chekactive.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Тормозная жидкость</td>
+                                            <td>20</td>
+                                            <td>
+                                                <div class="check-unactive">
+                                                    <img src="img/chekactive.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Фильтр системы VVT</td>
+                                            <td>5</td>
+                                            <td>
+                                                <div class="check-unactive">
+                                                    <img src="img/chekactive.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Топливный фильтр</td>
+                                            <td>18</td>
+                                            <td>
+                                                <div class="check-active">
+                                                    <img src="img/chekactive.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Охлаждающая жидкость</td>
+                                            <td>51</td>
+                                            <td>
+                                                <div class="check-active">
+                                                    <img src="img/chekactive.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="service-view-info-numbers">
+                                    <div class="service-view-info-numbers__wrap">
+                                        <div class="service-view-info-numbers__item">
+                                            <div class="service-view-info-numbers__title">Пробег, км</div>
+                                            <div class="service-view-info-numbers__sum">10 000</div>
+                                        </div>
+                                        <div class="service-view-info-numbers__item">
+                                            <div class="service-view-info-numbers__title">Период, мес.</div>
+                                            <div class="service-view-info-numbers__sum">6</div>
+                                        </div>
+                                        <div class="service-view-info-numbers__item">
+                                            <div class="service-view-info-numbers__title">Общая стоимость, руб.</div>
+                                            <div class="service-view-info-numbers__sum">315</div>
+                                        </div>
+                                    </div>
+                                    <a href="#app" class="enroll js-app" data-effect="mfp-zoom-in">Записаться на ТО</a>
+                                    <a href="#question" class="question-btn js-app" data-effect="mfp-zoom-in">Или задать вопрос</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </section>
+    </div>
+    <div class="sticky-footer"></div>
+    <footer class="nwmarkup footer">
+      <div class="nwmarkup footer__container">
+        FOOTER
+      </div>
+    </footer>
+
+    <div id="app" class="popup mfp-with-anim mfp-hide">
+        <h3>Запись на ТО</h3>
+        <div class="popup-form">
+            <form action="#" method="post">
+                <div class="popup-form__item">
+                    <div class="popup-form__label popup-form__label--required">ФИО</div>
+                    <input type="text" placeholder="ФИО">
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label popup-form__label--required">Контактный телефон</div>
+                    <input type="text" placeholder="Телефон">
+                </div>
+                <div class="popup-form__item popup-form__item--error">
+                    <div class="popup-form__label">Электронная почта</div>
+                    <input type="text" placeholder="Почта">
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label popup-form__label--required">Модель</div>
+                    <select>
+                        <option selected="selected">Atlas</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label popup-form__label--required">Двигатель</div>
+                    <select>
+                        <option selected="selected">2.0L Бензин Атмосферный</option>
+                        <option>3.0L Бензин</option>
+                        <option>4.0L Бензин</option>
+                        <option>5.0L Бензин</option>
+                    </select>
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label">Пробег</div>
+                    <input type="text" placeholder="Пробег">
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label">Период</div>
+                    <input type="text" placeholder="Период">
+                </div>
+                <input type="submit" value="Отправить заявку">
+            </form>
+        </div>
+        <p>
+            В ближайшее время с вами свяжется менеджер по оставленному телефону для уточнения деталей заявки
+        </p>
+    </div>
+
+    <div id="question" class="popup mfp-with-anim mfp-hide">
+        <h3>Задать вопрос</h3>
+        <div class="popup-form">
+            <form action="#" method="post">
+                <div class="popup-form__item">
+                    <div class="popup-form__label popup-form__label--required">ФИО</div>
+                    <input type="text" placeholder="ФИО">
+                </div>
+                <div class="popup-form__item">
+                    <div class="popup-form__label popup-form__label--required">Контактный телефон</div>
+                    <input type="text" placeholder="Телефон">
+                </div>
+                <div class="popup-form__item popup-form__item--error">
+                    <div class="popup-form__label">Электронная почта</div>
+                    <input type="text" placeholder="Почта">
+                </div>
+                <input type="submit" value="Задать вопрос">
+            </form>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="libs/magnific/magnific-popup.css">
+    <link rel="stylesheet" href="libs/range-slider/jqueryui.min.css">
+
+    <link rel="stylesheet" href="css/new-style.css">
+
+    <script src="libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/common-new.js"></script>
+
+    <script src="libs/range-slider/ui.js"></script>
+    <script src="libs/range-slider/jquery-ui-touch-punch.js"></script>
+    <script src="js/steps.js"></script>
+  </body>
+</html>

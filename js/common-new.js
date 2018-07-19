@@ -66,4 +66,45 @@ $(document).ready(function() {
             $('.header-address__map').slideUp();
         }
     });
+
+
+
+    $(".product-info__descr").each(function(){
+        var review_full = $(this).html();
+        var review = review_full;
+        if( review.length > 500 )
+        {
+            review = review.substring(0, 250);
+            $(this).html( review + '<br>' + '<a href="#" class="product-info__toggle">Полное описание</a>' );
+        }
+        $(this).append('<div class="full_text" style="display: none;">' + review_full + '</div>');
+    });
+
+    $("body").on("click", ".product-info__toggle", function(e){
+        e.preventDefault();
+        $(this).parent().html( $(this).parent().find(".full_text").html() );
+    });
+
+
+    $('.js-app').magnificPopup({
+        type: 'inline',
+        removalDelay: 500,
+        closeBtnInside: true,
+        fixedContentPos: true,
+        callbacks: {
+            beforeOpen: function() {
+                this.st.mainClass = this.st.el.attr('data-effect');
+            },
+            open: function(){
+                $('body').addClass('noscroll');
+            },
+            close: function() {
+                 $('body').removeClass('noscroll');
+            }
+        },
+    });
+
+
+    
+
 })
